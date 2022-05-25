@@ -28,18 +28,19 @@ const Intro = () => {
 };
 
 const IntroStyled = styled.section`
-  height: 100vh;
+  /* height: 100vh; */
   background-color: hsl(217, 28%, 15%);
   background-image: url(${bgCurvyDesktopImg});
   background-repeat: no-repeat;
   background-position: bottom;
+  padding-bottom: 15rem;
 
   .intro-contents {
     text-align: center;
   }
 
   h1 {
-    line-height: 1.9rem;
+    line-height: 3rem;
     margin: 1.7rem 0;
     font-size: 2rem;
     font-weight: 700;
@@ -50,13 +51,12 @@ const IntroStyled = styled.section`
     line-height: 1.3rem;
     margin-top: 2.5rem;
     margin-bottom: 1.7rem;
-    font-size: 1.2rem;
     letter-spacing: 1px;
   }
 
   button {
-    width: 11.5rem;
-    padding: 0.7rem 2rem;
+    width: 13rem;
+    padding: 0.8rem 3rem;
     border-radius: 3rem;
     border: none;
     background-image: linear-gradient(

@@ -30,7 +30,9 @@ body {
     color: hsl(0, 0%, 100%);
 }
 
-
+h1 {
+  font-size: 28px;
+}
 
 
 `;

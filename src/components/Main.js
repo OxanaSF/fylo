@@ -3,22 +3,25 @@ import styled from "styled-components";
 
 import CardDisplay from "./CardDisplay";
 import TestimonialsDisplay from "./TestimonialsDisplay";
+import SubscribeModal from "./SubscribeModal";
 
-import illustrationStayProductiveImg from '../images/illustration-stay-productive.png'
+import illustrationStayProductiveImg from "../images/illustration-stay-productive.png";
 
 const Main = () => {
   return (
     <MainStyled>
-      
-        <CardDisplay />
-  
+      <CardDisplay />
+
       <div className="main-info">
-        <img src={illustrationStayProductiveImg} alt="illustration stay productive" />
+        <img
+          src={illustrationStayProductiveImg}
+          alt="illustration stay productive"
+        />
         <div className="description">
-          <h2>
+          <h1>
             Stay productive,<br></br>
             wherever you are
-          </h2>
+          </h1>
 
           <p>
             Never let location be an issue when accessing your files. Fylo has
@@ -34,8 +37,8 @@ const Main = () => {
         </div>
       </div>
 
-    <TestimonialsDisplay />
-
+      <TestimonialsDisplay />
+      <SubscribeModal />
     </MainStyled>
   );
 };
@@ -43,8 +46,6 @@ const Main = () => {
 const MainStyled = styled.section`
   min-height: 110vh;
   background-color: hsl(218, 28%, 13%);
-
- 
 
   .main-info {
     display: flex;
@@ -54,7 +55,22 @@ const MainStyled = styled.section`
     padding-top: 8rem;
   }
 
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    line-height: 1.4;
+  }
 
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  p {
+    font-weight: 400;
+  }
 `;
 
 export default Main;
