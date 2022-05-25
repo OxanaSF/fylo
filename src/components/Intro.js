@@ -28,7 +28,7 @@ const Intro = () => {
 };
 
 const IntroStyled = styled.section`
-  min-height: 120vh;
+  height: 100vh;
   background-color: hsl(217, 28%, 15%);
   background-image: url(${bgCurvyDesktopImg});
   background-repeat: no-repeat;
