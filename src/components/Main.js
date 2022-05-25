@@ -58,7 +58,7 @@ const MainStyled = styled.section`
   .description {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
     line-height: 1.4;
   }
 
@@ -66,10 +66,12 @@ const MainStyled = styled.section`
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
+    font-weight: 400;
   }
 
   p {
     font-weight: 400;
+    font-size: 0.9rem;
   }
 `;
 

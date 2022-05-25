@@ -24,7 +24,7 @@ const TestimonialsDisplay = () => {
 const TestimonialsDisplayStyled = styled.div`
   background-image: url(${bgQuotesImg});
   background-repeat: no-repeat;
-  background-position: left 5rem top 10rem;
+  background-position: left 9rem top 7rem;
 
   display: flex;
   justify-content: center;

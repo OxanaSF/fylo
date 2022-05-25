@@ -1,15 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Card = (props) => {
   return (
     <CardStyled>
-        <img src={props.iconSrc} alt="" />
-        <h3>{props.header}</h3>
-        <p>{props.paragraph}</p>
+      <img src={props.iconSrc} alt="" />
+      <h3>{props.header}</h3>
+      <p>{props.paragraph}</p>
     </CardStyled>
-  )
-}
+  );
+};
 
 const CardStyled = styled.div`
   img {
@@ -21,8 +21,9 @@ const CardStyled = styled.div`
   }
 
   p {
-    line-height: 1.5;
+    line-height: 1.2;
+    font-size: 12px;
   }
-`
+`;
 
-export default Card
+export default Card;
