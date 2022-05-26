@@ -26,7 +26,7 @@ const CardStyled = styled.div`
   }
 
 
-  @media (max-width: 375px) {
+  @media (max-width: 780px) {
     h3 {
     font-size: 1.3rem;
   }

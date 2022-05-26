@@ -29,7 +29,7 @@ const CardDisplayStyled = styled.div`
 
 
 
-  @media (max-width: 375px) {
+  @media (max-width: 780px) {
     grid-template-columns: 1fr;
     width: 80%;
     }

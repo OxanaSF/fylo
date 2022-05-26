@@ -68,7 +68,7 @@ const IntroStyled = styled.section`
     font-size: 11px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 780px) {
     padding-bottom: 9rem;
     img {
       width: 85%;

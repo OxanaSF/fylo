@@ -69,7 +69,7 @@ const MainStyled = styled.section`
     line-height: 1.5;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 780px) {
     .main-info {
       padding-top: 3rem;
       display: flex;

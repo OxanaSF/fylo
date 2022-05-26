@@ -27,7 +27,7 @@ const NavStyled = styled.nav`
     gap: 2.8rem;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 600px) {
     padding: 1.5rem 1rem;
 
     .nav-items {

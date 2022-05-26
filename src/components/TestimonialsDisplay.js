@@ -34,7 +34,7 @@ const TestimonialsDisplayStyled = styled.div`
   line-height: 1.5;
 
 
-  @media (max-width: 375px) {
+  @media (max-width: 780px) {
     background-position: left 3rem top 7.2rem;
     padding: 10rem 2.7rem 0rem 2.7rem;
     display: grid;

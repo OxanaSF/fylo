@@ -71,7 +71,7 @@ const SubscribeModalStyled = styled.section`
     font-weight: 700;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 780px) {
     background: hsl(217, 28%, 15%);
     width: 90%;
     padding: 2rem;
