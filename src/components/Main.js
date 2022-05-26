@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import CardDisplay from "./CardDisplay";
+import ServiceCardDisplay from "./ServiceCardDisplay";
 import TestimonialsDisplay from "./TestimonialsDisplay";
 import SubscribeModal from "./SubscribeModal";
 
@@ -10,7 +10,7 @@ import illustrationStayProductiveImg from "../images/illustration-stay-productiv
 const Main = () => {
   return (
     <MainStyled>
-      <CardDisplay />
+      <ServiceCardDisplay />
 
       <div className="main-info">
         <img
@@ -18,21 +18,16 @@ const Main = () => {
           alt="illustration stay productive"
         />
         <div className="description">
-          <h1>
-            Stay productive,<br></br>
-            wherever you are
-          </h1>
+          <h1>Stay productive, wherever you are</h1>
 
           <p>
             Never let location be an issue when accessing your files. Fylo has
-            you<br></br>
-            covered for all of your file storage needs.
+            you covered for all of your file storage needs.
           </p>
 
           <p>
             Securely share files and folders with friends, family and colleagues
-            for live<br></br>
-            collaboration. No email attachments required.
+            for live collaboration. No email attachments required.
           </p>
         </div>
       </div>
@@ -44,7 +39,6 @@ const Main = () => {
 };
 
 const MainStyled = styled.section`
-  min-height: 110vh;
   background-color: hsl(218, 28%, 13%);
 
   .main-info {
@@ -72,6 +66,28 @@ const MainStyled = styled.section`
   p {
     font-weight: 400;
     font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 375px) {
+    .main-info {
+      padding-top: 3rem;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 85%;
+      }
+    }
+
+    .description {
+      padding: 0 2rem;
+
+      h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+      }
+    }
   }
 `;
 

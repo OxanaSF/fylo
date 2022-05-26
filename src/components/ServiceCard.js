@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Card = (props) => {
+const ServiceCard = (props) => {
   return (
     <CardStyled>
       <img src={props.iconSrc} alt="" />
@@ -24,6 +24,18 @@ const CardStyled = styled.div`
     line-height: 1.2;
     font-size: 12px;
   }
+
+
+  @media (max-width: 375px) {
+    h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 15px;
+  }
+    }
 `;
 
-export default Card;
+export default ServiceCard;

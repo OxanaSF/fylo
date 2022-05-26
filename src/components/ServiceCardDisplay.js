@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Card from "./Card";
+import Card from "./ServiceCard";
 
-import { cards } from "../components/CardData";
+import { serviceCards } from "./ServiceCardData";
 
-const CardDisplay = () => {
+const ServiceCardDisplay = () => {
   return (
     <CardDisplayStyled>
-      {cards.map((card) => (
+      {serviceCards.map((card) => (
         <Card
           iconSrc={card.iconSrc}
           header={card.header}
@@ -28,6 +28,11 @@ const CardDisplayStyled = styled.div`
   gap: 5rem;
 
 
+
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+    width: 80%;
+    }
 `;
 
-export default CardDisplay;
+export default ServiceCardDisplay;

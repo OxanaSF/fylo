@@ -28,8 +28,8 @@ const Footer = () => {
             alt="icon location"
           />
           <p className="location-description">
-            Lorem ipsum dolor sit amet, consectetur<br></br>
-            adipiscing elit, sed do eiusmod tempor<br></br>
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua
           </p>
         </div>
@@ -70,7 +70,6 @@ const Footer = () => {
 
 const FooterStyled = styled.footer`
   background: hsl(216, 53%, 9%);
-  height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,6 +124,31 @@ const FooterStyled = styled.footer`
     border: 0.1rem solid hsl(0, 0%, 100%);
     padding: 0.3rem;
     border-radius: 50%;
+  }
+
+
+  @media (max-width: 375px) {
+    padding: 10rem 2rem 3rem 2rem;
+    
+    .logo {
+      margin-left: 0;
+      
+      img {
+        width: 9rem;
+      }
+    }
+
+    .footer-content {
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .social-icons {
+      align-self: center;
+    }
+
+
+  
   }
 `;
 

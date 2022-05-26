@@ -22,14 +22,18 @@ const TestimonialCardStyled = styled.div`
   border-radius: 0.3rem;
   padding: 2rem;
 
+  p {
+    font-size: 12px;
+  }
+
   .testimonial-profile {
     display: flex;
     padding-top: 1.5rem;
     align-items: center;
 
     p {
-    font-size: 10px;
-  }
+      font-size: 11px;
+    }
   }
 
   img {
@@ -39,7 +43,9 @@ const TestimonialCardStyled = styled.div`
     margin-right: 0.3rem;
   }
 
-  
+  @media (max-width: 375px) {
+    padding: 1rem;
+  }
 `;
 
 export default TestimonialCard;

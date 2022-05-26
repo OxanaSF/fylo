@@ -23,12 +23,10 @@ html {
 
 
 body {
-    width: 1440px;
-    margin: auto;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     color: hsl(0, 0%, 100%);
-}
+
 
 h1 {
   font-size: 28px;

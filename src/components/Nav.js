@@ -18,12 +18,26 @@ const Nav = () => {
 const NavStyled = styled.nav`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 4.5rem 4rem;
 
   .nav-items {
     display: flex;
     justify-content: space-evenly;
     gap: 2.8rem;
+  }
+
+  @media (max-width: 375px) {
+    padding: 1.5rem 1rem;
+
+    .nav-items {
+      gap: 1.2rem;
+      font-size: 10px;
+    }
+
+    .logo {
+      width: 5.5rem;
+    }
   }
 `;
 

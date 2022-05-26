@@ -11,15 +11,11 @@ const Intro = () => {
       <Nav />
       <div className="intro-contents">
         <img src={illustrationIntroImg} alt="illustration intro img" />
-        <h1>
-          All your files in one secure location, <br></br>
-          accessible anywhere.
-        </h1>
+        <h1>All your files in one secure location, accessible anywhere.</h1>
         <p className="intro-paragraph">
           Fylo stores all your most important files in one secure location.
-          <br></br>
-          Access them wherever you need, share and collaborate with<br></br>
-          friends family, and co-workers.
+          Access them wherever you need, share and collaborate with friends
+          family, and co-workers.
         </p>
         <button>Get Started</button>
       </div>
@@ -28,7 +24,6 @@ const Intro = () => {
 };
 
 const IntroStyled = styled.section`
-  /* height: 100vh; */
   background-color: hsl(217, 28%, 15%);
   background-image: url(${bgCurvyDesktopImg});
   background-repeat: no-repeat;
@@ -40,18 +35,22 @@ const IntroStyled = styled.section`
   }
 
   h1 {
-    line-height: 3rem;
+    line-height: 2.5rem;
     margin: 1.7rem 0;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.5px;
+    width: 50%;
+    margin: auto;
   }
 
   p {
     line-height: 1.3rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1.7rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
     letter-spacing: 1px;
+    width: 50%;
+    margin: auto;
   }
 
   button {
@@ -67,6 +66,36 @@ const IntroStyled = styled.section`
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     font-size: 11px;
+  }
+
+  @media (max-width: 375px) {
+    padding-bottom: 9rem;
+    img {
+      width: 85%;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      line-height: 1.3;
+      font-weight: 700;
+      width: 90%;
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.7;
+      letter-spacing: 1px;
+      font-size: 13px;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      width: 16rem;
+      padding: 1.2rem 3rem;
+    }
+   
   }
 `;
 

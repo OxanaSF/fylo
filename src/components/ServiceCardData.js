@@ -1,6 +1,6 @@
 
 
-export const cards = [
+export const serviceCards = [
     {
         id: 1,
         iconSrc: `${process.env.PUBLIC_URL}/images/icon-access-anywhere.svg`,

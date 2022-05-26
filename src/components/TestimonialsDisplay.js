@@ -24,7 +24,7 @@ const TestimonialsDisplay = () => {
 const TestimonialsDisplayStyled = styled.div`
   background-image: url(${bgQuotesImg});
   background-repeat: no-repeat;
-  background-position: left 9rem top 7rem;
+  background-position: left 10rem top 7.2rem;
 
   display: flex;
   justify-content: center;
@@ -32,6 +32,15 @@ const TestimonialsDisplayStyled = styled.div`
   gap: 2rem;
   padding: 10rem 10rem 5rem 10rem;
   line-height: 1.5;
+
+
+  @media (max-width: 375px) {
+    background-position: left 3rem top 7.2rem;
+    padding: 10rem 2.7rem 0rem 2.7rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  
+    }
 `;
 
 export default TestimonialsDisplay;
